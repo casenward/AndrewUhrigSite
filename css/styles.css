@@ -1,0 +1,23 @@
+/* General page styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Left-side content */
+.left-side {
+  width: 300px;
+  margin-left: 50px;
+  margin-top: 120px; 
+  text-align: center;
+}
+
+.left-side img {
+  width: 300px;
+  height: auto;
+}
+
+.left-side h2 {
+  margin-top: 5px;
+  font-size: 22px;
+}

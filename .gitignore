@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+
+# Angular build artifacts
+dist/
+.angular/
+coverage/
+
+# NestJS build output
+dist/
+.env
+*.log
+
+# Editor junk
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
