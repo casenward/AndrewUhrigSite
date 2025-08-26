@@ -102,3 +102,69 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
+
+
+/*Photo Carousel*/
+.photo-carousel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.photo-carousel img {
+    max-width: 55vw;
+    max-height: 65vh;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.photo-carousel .arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+
+.photo-carousel .arrow-button:hover {
+  opacity: 0.8;
+}
+
+.photo-carousel .arrow-button img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  opacity: 0.8;
+  
+}
+
+.photo-carousel .left-arrow {
+  left: 0;
+}
+
+.photo-carousel .right-arrow {
+  right: 0;
+}
+
+.photo-carousel .previous-photo { 
+  left: 0;
+}
+
+.photo-carousel .next-photo {
+  right: 0;
+}
+

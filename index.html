@@ -6,9 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Logo</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
+
+    <!-- Photo Carousel -->
+    <div class="photo-carousel">
+        <!-- Left Arrow Button -->
+        <div class="arrow-button left-arrow">
+            <img src="images/home_carousel/left_arrow.png" alt="Previous" onclick="previousPhoto()">
+        </div>
+
+
+        
+        <!-- Main Image -->
+        <img src="images/home_carousel/Photo_1.jpg" alt="Current Photo" id="current-photo">
+
+        
+        <!-- Right Arrow Button -->
+        <div class="arrow-button right-arrow">
+            <img src="images/home_carousel/right_arrow.png" alt="Next" onclick="nextPhoto()">
+        </div>
+    </div>
+
 
     <!-- Left-side  -->
     <div class="left-side" id="about">
@@ -57,9 +78,7 @@
                 <a href="#">Email</a>
                 <a href="#">Message</a>
             </div>
-    </div>
-
-
+        </div>
 
 
 </body>
