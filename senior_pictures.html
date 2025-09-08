@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .gallery {
+            margin-top: 60px; /* Adjust based on navbar height */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            justify-items: center;
+            width: 100vw;
+            max-width: 100vw;
+            box-sizing: border-box;
+            padding: 32px 0;
+        }
+        .gallery img {
+            width: 90%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #fff;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="images/senior_pictures/Photo_1.jpg" alt="Sports Photo 1">
+        <img src="images/senior_pictures/Photo_2.jpg" alt="Sports Photo 2">
+        <img src="images/senior_pictures/Photo_3.jpg" alt="Sports Photo 3">
+        <img src="images/senior_pictures/Photo_4.png" alt="Sports Photo 4">
+        <img src="images/senior_pictures/Photo_5.png" alt="Sports Photo 5">
+        <img src="images/senior_pictures/Photo_6.png" alt="Sports Photo 6">
+        <img src="images/senior_pictures/Photo_7.png" alt="Sports Photo 7">
+        <img src="images/senior_pictures/Photo_8.png" alt="Sports Photo 8">
+        <img src="images/senior_pictures/Photo_9.png" alt="Sports Photo 9">
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn">PHOTOGRAPHY
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="sports.html" onclick="selectCategory('Sports')">Sports</a>
+                <a href="senior_pictures.html" onclick="selectCategory('Senior Pictures')">Senior Pictures</a>
+                <a href="couples.html" onclick="selectCategory('Couples')">Couples</a>
+                <a href="events.html" onclick="selectCategory('Events')">Events</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">VIDEOGRAPHY
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Basketball</a>
+                <a href="#">Football</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">SOCIAL MEDIA
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://www.instagram.com/auimages6/">Instagram</a>
+                <a href="https://www.flickr.com/photos/198881219@N07/">Flickr</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">CONTACT ME
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="mailto:2024andrewu@gmail.com">Send Email: 2024andrewu@gmail.com</a>
+                <a href="sms:6143956764?&body=Hello%20Casen,%20I%27m%20interested%20in%20your%20services.">
+                    Send a text: (614) 395-6764
+                </a>
+
+            </div>
+        </div>
+
+</body>
+</html>
