@@ -1,8 +1,12 @@
 /* General Page Styling */
+html, body {
+    overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: serif, sans-serif;
-  background-color: rgb(255, 254, 254);
+  background-color: rgb(109, 109, 109);
 }
 
 /* Left-side content */
@@ -11,20 +15,23 @@ body {
   margin-left: 0;
   margin-top: 60px;  
   text-align: center;
-  background-color: lch(63.22% 0.01 296.81);
+  background-color: lch(100% 0.01 296.81);
   padding: 40px 30px 40px 50px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(96, 89, 89, 0.1);
   min-height: calc(100vh - 60px);
   box-sizing: border-box;
 }
 
 .left-side img {
   width: 300px;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%; /* Makes image circular */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 .left-side h2 {
-  margin-top: 5px;
+  margin-top: 15px;
   font-size: 22px;
 }
 
@@ -83,7 +90,7 @@ body {
   top: 100%;   /* directly below parent */
   left: 0;
   width: 100%; /* same width as parent slot */
-  background-color: #f9f9f9;
+  background-color: #404040;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -92,7 +99,7 @@ body {
 .dropdown-content a {
   display: block;
   padding: 12px 16px;
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-align: left;
   transition: background 0.2s ease;
@@ -101,16 +108,13 @@ body {
 /* Dropdown hover effect (match top-level) */
 .dropdown-content a:hover {
   background-color: red;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-
-
 
 /*Photo Carousel*/
 .photo-carousel {
@@ -209,3 +213,19 @@ body {
 .photo-carousel #next-photo:hover {
   opacity: 1;
 }
+
+/* Andrew Logo Bar */
+.andrew-logo-bar {
+  position: fixed;
+  top: 60px;       /* right below the 60px navbar */
+  right: 20px;     /* a little padding from the right edge */
+  z-index: 1;   /* above carousel & content */
+}
+
+.andrew-logo-bar img {
+  max-width: 250px;   /* shrink slightly for the corner */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
